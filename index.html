@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Books Publication™ | Work From Home Writing</title>
+<meta name="description" content="Work from home book writing projects – details, timeline and payment terms on Telegram.">
+<meta name="theme-color" content="#2a0f5c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --deep:#2a0f5c;
+  --violet:#6d28d9;
+  --pink:#ec4899;
+  --orange:#fb923c;
+  --gold:#fde047;
+  --text:#1f1633;
+  --muted:#6b6380;
+  --bg:#faf7ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Poppins,Arial,sans-serif;
+  color:var(--text);background:var(--bg);
+  line-height:1.6;padding-bottom:84px;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(560px,calc(100% - 32px));margin:auto}
+.hand{font-family:Caveat,cursive}
+
+/* LIVE STRIP */
+.strip{
+  background:linear-gradient(90deg,var(--pink),var(--orange));
+  color:#fff;font-size:12px;font-weight:700;
+  text-align:center;padding:8px 10px;letter-spacing:.3px;
+}
+.dot{
+  display:inline-block;width:8px;height:8px;border-radius:50%;
+  background:#fff;margin-right:6px;animation:blink 1.2s infinite;
+}
+@keyframes blink{50%{opacity:.2}}
+
+/* HERO */
+.hero{
+  position:relative;color:#fff;text-align:center;
+  background:radial-gradient(circle at 20% 10%,#8b5cf6 0,transparent 45%),
+             radial-gradient(circle at 90% 80%,#ec4899 0,transparent 40%),
+             var(--deep);
+  padding:22px 0 70px;
+  border-radius:0 0 36px 36px;overflow:hidden;
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(transparent 0 27px,#ffffff0d 27px 28px);
+  pointer-events:none;
+}
+.hero > *{position:relative;z-index:1}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:28px}
+.logo{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(135deg,var(--gold),var(--orange));
+  display:grid;place-items:center;font-size:21px;
+  box-shadow:0 6px 16px #fb923c66;
+}
+.brand b{font-size:15px;line-height:1.15;text-align:left}
+.brand small{display:block;font-size:9px;letter-spacing:1.5px;opacity:.7;font-weight:600}
+
+.float{
+  font-size:56px;display:inline-block;
+  animation:write 2.4s ease-in-out infinite;
+  filter:drop-shadow(0 10px 14px #0006);
+}
+@keyframes write{0%,100%{transform:rotate(-12deg) translate(0,0)}50%{transform:rotate(8deg) translate(10px,-6px)}}
+
+h1{font-size:clamp(32px,9vw,46px);line-height:1.05;margin:10px 0 8px;font-weight:800}
+h1 .grad{
+  background:linear-gradient(90deg,var(--gold),var(--orange),var(--pink));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .hand{font-size:30px;color:var(--gold);margin:0 0 6px}
+.hero p{font-size:14px;opacity:.85;margin:0 auto 24px;max-width:400px}
+
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(90deg,#229ed9,#1c7fd6);color:#fff;
+  font-weight:800;font-size:17px;letter-spacing:.3px;
+  padding:16px 22px;border-radius:50px;
+  box-shadow:0 10px 24px #229ed966;
+  animation:pulse 1.8s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 #229ed9aa}
+  70%{box-shadow:0 0 0 14px #229ed900}
+  100%{box-shadow:0 0 0 0 #229ed900}
+}
+.btn svg{width:22px;height:22px;fill:currentColor}
+
+.badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+.badges span{
+  background:#ffffff1a;border:1px solid #ffffff2e;
+  font-size:11px;font-weight:600;padding:5px 12px;border-radius:30px;
+  backdrop-filter:blur(4px);
+}
+
+/* FEATURE CHIPS (overlap) */
+.feat{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  margin-top:-42px;position:relative;z-index:2;
+}
+.feat div{
+  background:#fff;border-radius:16px;padding:14px 6px;text-align:center;
+  box-shadow:0 12px 26px #2a0f5c1f;
+}
+.feat i{font-style:normal;font-size:24px;display:block}
+.feat b{font-size:12px;color:var(--deep);display:block;line-height:1.3;margin-top:4px}
+
+/* SECTION TITLES */
+.title{text-align:center;margin:40px 0 16px}
+.title small{
+  font-size:11px;font-weight:800;letter-spacing:2px;color:var(--pink);
+}
+.title h2{margin:2px 0 0;font-size:24px;color:var(--deep)}
+
+/* PROJECT CARDS */
+.cards{display:grid;gap:14px}
+.card{
+  position:relative;background:#fff;border-radius:18px;padding:16px 18px;
+  display:flex;align-items:center;gap:14px;
+  box-shadow:0 8px 20px #2a0f5c14;overflow:hidden;
+}
+.card:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:5px;
+  background:linear-gradient(var(--violet),var(--pink));
+}
+.card.hot{border:2px solid var(--orange)}
+.ribbon{
+  position:absolute;top:10px;right:-28px;transform:rotate(35deg);
+  background:var(--orange);color:#fff;font-size:9px;font-weight:800;
+  padding:2px 30px;letter-spacing:1px;
+}
+.ico{
+  flex:none;width:48px;height:48px;border-radius:14px;
+  background:linear-gradient(135deg,#ede9fe,#fce7f3);
+  display:grid;place-items:center;font-size:22px;
+}
+.card h3{margin:0;font-size:15px;color:var(--deep)}
+.card .meta{font-size:12px;color:var(--muted)}
+.amt{
+  margin-left:auto;text-align:right;font-weight:800;font-size:20px;
+  background:linear-gradient(90deg,var(--violet),var(--pink));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  white-space:nowrap;
+}
+.amt small{display:block;font-size:10px;color:var(--muted);-webkit-text-fill-color:var(--muted);font-weight:600}
+.note{font-size:11px;color:var(--muted);text-align:center;margin:12px 0 0}
+
+/* STEPS */
+.steps{position:relative;display:grid;gap:18px;padding-left:4px}
+.steps:before{
+  content:"";position:absolute;left:25px;top:20px;bottom:20px;
+  border-left:2px dashed #c4b5fd;
+}
+.step{display:flex;gap:14px;align-items:flex-start;position:relative}
+.num{
+  flex:none;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--violet),var(--pink));color:#fff;
+  display:grid;place-items:center;font-weight:800;font-size:16px;
+  box-shadow:0 6px 14px #6d28d955;
+}
+.step b{color:var(--deep);font-size:15px}
+.step p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+/* CTA BOX */
+.cta{
+  margin-top:40px;text-align:center;color:#fff;
+  background:linear-gradient(135deg,var(--violet),var(--pink) 60%,var(--orange));
+  border-radius:24px;padding:28px 20px;
+  box-shadow:0 16px 30px #ec489944;
+}
+.cta .hand{font-size:32px;margin:0;line-height:1}
+.cta p{font-size:13px;opacity:.9;margin:8px 0 18px}
+.cta .btn{background:#fff;color:var(--deep);animation:none;box-shadow:0 8px 18px #0003}
+
+/* WARNING */
+.warn{
+  margin-top:24px;background:#fff8e1;border:1px dashed #f5c542;
+  border-radius:14px;padding:12px 14px;font-size:12px;color:#6b5414;
+}
+
+footer{text-align:center;font-size:11px;color:var(--muted);padding:26px 0 8px}
+
+/* STICKY */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:9;
+  background:#ffffffee;backdrop-filter:blur(8px);
+  border-top:1px solid #ede9fe;padding:10px 0;
+}
+.sticky .btn{padding:13px;font-size:15px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:.6s}
+.rv.on{opacity:1;transform:none}
+</style>
+
+<!-- META PIXEL + QUALIFIED TRACKING -->
+<script>
+(() => {
+  'use strict';
+  const CONFIG = Object.freeze({
+    pixelId: '1838334250670560',
+    telegramUrl: 'https://t.me/+rD7yupBPDXBlZWRl',
+    pageViewDelayMs: 3000,
+    passiveReaderDelayMs: 8000,
+    minimumClickTimeMs: 1000,
+    trackedRedirectDelayMs: 700,
+    fastRedirectDelayMs: 50,
+    pageViewSessionKey: 'alpha_books_qualified_page_view'
+  });
+
+  const pageOpenedAt = Date.now();
+  let pageViewTracked = false, subscribeTracked = false,
+      navigationStarted = false, humanInteractionDetected = false;
+
+  function loadMetaPixel(){
+    const guard = `__alphaBooksPixelInit_${CONFIG.pixelId}`;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    if(window[guard]) return;
+    let registered = false;
+    try{
+      if(typeof fbq.getState === 'function'){
+        registered = fbq.getState().pixels.some(p => String(p.id) === String(CONFIG.pixelId));
+      }
+    }catch(e){ registered = false; }
+    if(!registered) fbq('init', CONFIG.pixelId);
+    window[guard] = true;
+  }
+
+  function sessionPageViewExists(){
+    try{ return sessionStorage.getItem(CONFIG.pageViewSessionKey) === 'true'; }catch(e){ return false; }
+  }
+  function saveSessionPageView(){
+    try{ sessionStorage.setItem(CONFIG.pageViewSessionKey,'true'); }catch(e){}
+  }
+  function automationDetected(){ return navigator.webdriver === true; }
+
+  function tryQualifiedPageView(){
+    const t = Date.now() - pageOpenedAt;
+    const interactionQualified = humanInteractionDetected && t >= CONFIG.pageViewDelayMs;
+    const passiveQualified = t >= CONFIG.passiveReaderDelayMs;
+    if(pageViewTracked || sessionPageViewExists() || automationDetected()) return;
+    if(!(interactionQualified || passiveQualified)) return;
+    if(document.visibilityState !== 'visible' || !document.hasFocus()) return;
+    if(typeof window.fbq !== 'function') return;
+
+    fbq('track','PageView',{
+      qualified_view:true,
+      human_interaction:humanInteractionDetected,
+      qualification: interactionQualified ? 'interaction_3_seconds' : 'focused_8_seconds',
+      time_on_page: Math.round(t/1000)
+    });
+    pageViewTracked = true;
+    saveSessionPageView();
+  }
+
+  function recordHumanInteraction(e){
+    if(!e.isTrusted || humanInteractionDetected) return;
+    humanInteractionDetected = true;
+    tryQualifiedPageView();
+  }
+
+  function initQualification(){
+    ['pointerdown','touchstart','keydown','scroll','mousemove'].forEach(ev =>
+      window.addEventListener(ev, recordHumanInteraction, {passive:true, once:true}));
+    setTimeout(tryQualifiedPageView, CONFIG.pageViewDelayMs);
+    setTimeout(tryQualifiedPageView, CONFIG.passiveReaderDelayMs);
+  }
+
+  function handleTelegramClick(e){
+    if(e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    if(navigationStarted) return;
+    navigationStarted = true;
+
+    const t = Date.now() - pageOpenedAt;
+    const qualified = e.isTrusted && !automationDetected() && t >= CONFIG.minimumClickTimeMs;
+
+    if(qualified && !subscribeTracked && typeof window.fbq === 'function'){
+      fbq('track','Subscribe',{
+        value:0, currency:'INR', destination:'Telegram', time_on_page:Math.round(t/1000)
+      });
+      subscribeTracked = true;
+    }
+    setTimeout(() => window.location.assign(CONFIG.telegramUrl),
+      qualified ? CONFIG.trackedRedirectDelayMs : CONFIG.fastRedirectDelayMs);
+  }
+
+  function initButtons(){
+    document.querySelectorAll('.telegram-link').forEach(b => {
+      b.href = CONFIG.telegramUrl;
+      b.addEventListener('click', handleTelegramClick);
+    });
+  }
+
+  loadMetaPixel();
+  initQualification();
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initButtons, {once:true});
+  } else { initButtons(); }
+})();
+</script>
+<!-- END META PIXEL -->
+</head>
+
+<body>
+
+<div class="strip"><span class="dot"></span>New writing projects available on Telegram</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">📖</div>
+      <b>Alpha Books Publication™<small>WORK FROM HOME · WRITING</small></b>
+    </div>
+
+    <span class="float">✍️</span>
+    <h1>Work From Home<br><span class="grad">Book Writing</span></h1>
+    <p class="hand">Ghar baithe likho, apne time par</p>
+    <p>Writing projects ki details, timeline aur payment terms Telegram channel par dekhein.</p>
+
+    <a class="btn telegram-link" href="https://t.me/+rD7yupBPDXBlZWRl">
+      <svg viewBox="0 0 24 24"><path d="M9.8 15.6l-.4 5.1c.6 0 .8-.3 1.1-.6l2.7-2.5 5.5 4c1 .6 1.7.3 2-.9l3.6-16.9c.3-1.5-.6-2.1-1.6-1.7L1.5 10.2c-1.4.6-1.4 1.4-.2 1.8l5.4 1.7L19.1 6c.6-.4 1.1-.2.7.2z"/></svg>
+      JOIN TELEGRAM
+    </a>
+
+    <div class="badges">
+      <span>🏠 Work from Home</span>
+      <span>📝 Handwriting</span>
+      <span>⏰ Flexible Time</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- FEATURES -->
+  <div class="feat">
+    <div><i>👩‍🎓</i><b>Students &amp; Housewives</b></div>
+    <div><i>📄</i><b>Written Project Brief</b></div>
+    <div><i>💬</i><b>Telegram Support</b></div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="title rv"><small>PROJECTS</small><h2>Choose Your Project</h2></div>
+  <div class="cards">
+    <div class="card rv">
+      <div class="ico">📘</div>
+      <div><h3>Project 1</h3><div class="meta">50 Pages · 7 Days</div></div>
+      <div class="amt">₹22,000*<small>indicative</small></div>
+    </div>
+    <div class="card hot rv">
+      <span class="ribbon">POPULAR</span>
+      <div class="ico">📗</div>
+      <div><h3>Project 2</h3><div class="meta">80 Pages · 15 Days</div></div>
+      <div class="amt">₹30,000*<small>indicative</small></div>
+    </div>
+    <div class="card rv">
+      <div class="ico">📙</div>
+      <div><h3>Project 3</h3><div class="meta">120 Pages · 30 Days</div></div>
+      <div class="amt">₹45,000*<small>indicative</small></div>
+    </div>
+  </div>
+  <p class="note">*Indicative figures — income ki guarantee nahi hai. Final payment aur approval written agreement me confirm karein.</p>
+
+  <!-- STEPS -->
+  <div class="title rv"><small>HOW IT WORKS</small><h2>3 Easy Steps</h2></div>
+  <div class="steps">
+    <div class="step rv"><div class="num">1</div><div><b>Telegram Join Karein</b><p>Channel par project details aur contact info milegi.</p></div></div>
+    <div class="step rv"><div class="num">2</div><div><b>Project Brief Lein</b><p>Sample, format, deadline aur payment terms written me lein.</p></div></div>
+    <div class="step rv"><div class="num">3</div><div><b>Likhein &amp; Submit Karein</b><p>Time par submit karein aur apni copy save rakhein.</p></div></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta rv">
+    <p class="hand">Shuru karne ke liye ready?</p>
+    <p>Abhi Telegram join karein aur latest projects dekhein.</p>
+    <a class="btn telegram-link" href="https://t.me/+rD7yupBPDXBlZWRl">➤ JOIN TELEGRAM CHANNEL</a>
+  </div>
+
+  <!-- WARNING -->
+  <div class="warn">
+    <b>⚠️ Dhyan dein:</b> Kaam unlock karne ke liye koi fee na dein. OTP, bank password ya card details kabhi share na karein.
+  </div>
+
+  <footer>© 2026 Alpha Books Publication™</footer>
+</main>
+
+<!-- STICKY CTA -->
+<div class="sticky">
+  <div class="wrap">
+    <a class="btn telegram-link" href="https://t.me/+rD7yupBPDXBlZWRl">➤ JOIN TELEGRAM NOW</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('on')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target); }
+    });
+  },{threshold:.15});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+
+</body>
+</html>
